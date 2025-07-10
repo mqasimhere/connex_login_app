@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intern_training_app/loginScreen.dart';
+import 'package:intern_training_app/signup_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Intern Training App',
-      home: Loginscreen(),
+      initialRoute: '/login',
+      routes: {
+        '/login': (context) => Loginscreen(),
+        '/signup': (context) => SignupScreen(),
+      },
     );
   }
 }

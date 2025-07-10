@@ -38,6 +38,7 @@ class _SignupScreenState extends State<SignupScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("connex Signup", style: TextStyle(color: Colors.white)),
+        backgroundColor: const Color.fromARGB(255, 102, 100, 100),
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -98,17 +99,33 @@ class _SignupScreenState extends State<SignupScreen> {
                         showSnackBar(
                           "Signed up as $fullName with email $email",
                         );
-                        // Navigate to the login screen after signup
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Loginscreen(),
-                          ),
-                        );
                       }
                     },
-                    child: Text("Signup"),
+                    child: Text(
+                      "Signup",
+                      style: TextStyle(color: Colors.white, fontSize: 20),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 71, 68, 68),
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                      textStyle: TextStyle(fontSize: 20),
+                    ),
                   ),
+                ),
+
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Already have an account?"),
+                    TextButton(
+                      onPressed: () {
+                        // Navigate to the login screen
+                        Navigator.pushReplacementNamed(context, '/login');
+                      },
+                      child: Text("Login"),
+                    ),
+                  ],
                 ),
               ],
             ),

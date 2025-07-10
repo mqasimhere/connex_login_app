@@ -95,7 +95,7 @@ class _LoginscreenState extends State<Loginscreen> {
                     TextButton(
                       onPressed: () {
                         // Navigate to the signup screen
-                        Navigator.pushNamed(context, '/signup');
+                        Navigator.pushReplacementNamed(context, '/signup');
                       },
                       child: Text("Sign Up"),
                     ),
