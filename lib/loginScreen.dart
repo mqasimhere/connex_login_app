@@ -78,14 +78,28 @@ class _LoginscreenState extends State<Loginscreen> {
                         showSnackBar("logged in as $email");
                       }
                     },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 71, 68, 68),
+                    ),
                     child: Text(
                       "Login",
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 71, 68, 68),
-                    ),
                   ),
+                ),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Don't have an account?"),
+                    TextButton(
+                      onPressed: () {
+                        // Navigate to the signup screen
+                        Navigator.pushNamed(context, '/signup');
+                      },
+                      child: Text("Sign Up"),
+                    ),
+                  ],
                 ),
               ],
             ),
