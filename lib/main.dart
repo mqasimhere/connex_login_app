@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:intern_training_app/loginScreen.dart';
-import 'package:intern_training_app/signup_screen.dart';
+import 'package:intern_training_app/screens/login_screen.dart';
+import 'package:intern_training_app/screens/signup_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Intern Training App',
       initialRoute: '/login',
       routes: {
-        '/login': (context) => Loginscreen(),
+        '/login': (context) => LoginScreen(),
         '/signup': (context) => SignupScreen(),
       },
     );
