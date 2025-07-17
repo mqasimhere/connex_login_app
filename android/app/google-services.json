@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "798862620466",
+    "project_id": "connex-c2604",
+    "storage_bucket": "connex-c2604.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798862620466:android:96f0c9f617bceebd06c92b",
+        "android_client_info": {
+          "package_name": "com.example.intern_training_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmQeegPwD9l7ytkg6yCbq40JBZbaUzh8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
